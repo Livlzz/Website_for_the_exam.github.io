@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор доставки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Сайт розроблено студентом Семененко Максим, група 2-21 -->
+
+<header>
+    <h1>Калькулятор доставки</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="services.html">Послуги</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+</header>
+
+<main>
+    <label>Місто:
+        <select id="city">
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+        </select>
+    </label>
+
+    <label>Вага (кг):
+        <input type="number" id="weight">
+    </label>
+
+    <label>Тип доставки:
+        <select id="type">
+            <option value="standard">Стандартна</option>
+            <option value="express">Експрес</option>
+        </select>
+    </label>
+
+    <button onclick="calculate()">Розрахувати</button>
+
+    <p id="result"></p>
+</main>
+
+<footer>
+    <p>Семененко Максим | Група 2-21</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
